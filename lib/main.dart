@@ -10,41 +10,26 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.cyan.shade800,
         body: SafeArea(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              // Container 1
-              Container(
-                width: 100.0,
-                color: Colors.red,
-              ),
-              // Container 2
-              Container(
-                width: 100.0,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Container(
-                      width: 100.0,
-                      height: 100.0,
-                      color: Colors.yellow,
-                    ),
-                    Container(
-                      width: 100.0,
-                      height: 100.0,
-                      color: Colors.green,
-                    ),
-                  ],
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                CircleAvatar(
+                  radius: 50.0,
+                  backgroundImage: AssetImage('images/picture.jpg'),
                 ),
-              ),
-              Container(
-                width: 100.0,
-                color: Colors.red.shade200,
-              ),
-            ],
+                Text(
+                  'Ana Lucia Blanco',
+                  style: TextStyle(
+                      fontSize: 40.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
           ),
         ),
       ),
