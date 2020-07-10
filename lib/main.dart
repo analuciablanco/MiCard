@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
                     leading: Icon(
                       Icons.call,
                       size: 30.0,
-                      color: Colors.orange.shade400,
+                      color: Colors.cyan.shade700,
                     ),
                     title: Text(
                       '+52 (644) 1 234 567',
@@ -68,7 +68,7 @@ class MyApp extends StatelessWidget {
                     leading: Icon(
                       Icons.mail,
                       size: 30.0,
-                      color: Colors.orange.shade400,
+                      color: Colors.cyan.shade700,
                     ),
                     title: Text(
                       'analuciablanco@outlook.com',
